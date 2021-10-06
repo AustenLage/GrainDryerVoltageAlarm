@@ -1,0 +1,41 @@
+
+void setup() {
+  // put your setup code here, to run once:
+  pinMode(2, INPUT_PULLUP);
+  pinMode(4, OUTPUT);
+  pinMode(A3, OUTPUT);
+
+  digitalWrite(4, HIGH);
+  tone(A3, 500);
+  delay(500);
+  tone(A3, 1000);
+  delay(500);
+  tone(A3, 1500);
+  delay(500);
+  tone(A3, 2000);
+  delay(500);
+  tone(A3, 250);
+  delay(500);
+  tone(A3, 500);
+  delay(500);
+  tone(A3, 1000);
+  delay(1000);
+  noTone(A3);
+  digitalWrite(4, LOW);
+}
+
+void loop() {
+ 
+ if (digitalRead(2) == LOW) {
+    digitalWrite(4, HIGH);
+    tone(A3, 1500);
+    delay(250);
+    digitalWrite(4, LOW);
+    tone(A3, 500);
+    delay(250);
+    digitalWrite(4, HIGH);
+    noTone(A3);
+    delay(250);
+ }
+
+}
