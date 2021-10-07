@@ -15,7 +15,7 @@ Adafruit_SSD1306 display(OLED_WIDTH, OLED_HEIGHT);
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////             -----------------
 
-const int numReadings = 30;
+const int numReadings = 200;
 
 int readings[numReadings];      // the readings from the analog input
 int readIndex = 0;              // the index of the current reading
